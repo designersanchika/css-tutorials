@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selectors</title>
+</head>
+<body>
+   <h1>Advance Selectors</h1>
+   <ul style="font-size: 20px;">
+    <li>Simple selectors</li>
+    <ol>
+        <li>type selectors</li>
+        <li>class selectors</li>
+        <li>id selectors</li>
+        <li>universal selectors</li>
+    </ol>
+    <li>Combinator Selectors</li>
+    <ol>
+        <li>descent selector (ul li)</li>
+        <li>direct child selector (ul>li)</li>
+        <li>adjecent sibling selector  (div+p)</li>
+        <li>general sibling selectors  (div~p)</li>
+    </ol>
+    <li>Attribute Selectors</li>
+     <ol>
+        <li>A[attr]</li>
+            <ol>
+                <style>
+                    img[alt]{
+                       border: 3px solid red;
+                    }
+                </style>
+                <img src="bird.jpg" alt="kingfisher" width="200px">
+            </ol>
+        <li>A[attr=val]</li>
+        <li>A[attr^=val]</li>
+        <li>A[attr|=val]</li>
+        <li>A[attr$=val]</li>
+        <li>A[attr*=val]</li>
+        <li>A[attr~=val]</li>
+     </ol>
+    <li><h2>Pseudo-classes</h2></li>
+        <ul>first-child,last-child,nth-child(),nth-last-child(),nth-last-of-type(),
+        nth-of-type(),only-child,only-of-child,first-of-type,last-of-type,empty,
+        not(),lang(),link,hover,visited,active,target,
+          <h3>used in forms</h3>
+        focus,checked,disabled,
+        enabled,required,optional,in-range,out-of-range,read-only,read-write,valid,invalid,default,root
+        </ul>
+    <li><h2>pseudo elements</h2></li>
+        <ul>after,before,first-letter,first-line,selection,placeholder</ul>
+   </ul> 
+</body>
+</html>

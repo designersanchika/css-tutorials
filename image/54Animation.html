@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .card{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            line-height: 300px;
+            margin: 50px 10px ;
+            background: rgb(145, 123, 123);
+            color: brown;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 0 10px red;
+            animation-name: animation ;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-iteration-count: 4;
+            animation-direction: alternate;
+
+
+        }
+        @keyframes animation {
+            from {border-radius: 0%;}
+            to {border-radius: 50%;background-color: red;color:white;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <ul style="font-size: 25px;">
+        <li>animation name</li>
+        <li>animation duration</li>
+        <li>animation-timing-function</li>
+        <li>animation delay</li>
+        <li>animation-iteration-count</li>
+        <li>animation-direction</li>
+        <li>animation-fill-mode</li>
+            <ol>
+                <li>none</li>
+                <li>forwards</li>
+                <li>backwards</li>
+                <li>both</li>
+            </ol>
+        <li>animation-play-mode</li>
+    </ul>
+    
+
+    <div class="card">Animation</div>
+</body>
+</html>

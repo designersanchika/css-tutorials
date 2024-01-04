@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 2D</title>
+    <style>
+        #box{
+            width: 250px;
+            height: 150px;
+            font-size: 100px;
+            background:tomato;
+            margin: 50px 50px;
+            transform: rotate(30deg);
+            transition: transform 1s;
+        }
+         
+        #box:hover{
+            transform: rotate(180deg);
+        }
+
+        #box1{
+            width: 250px;
+            height: 150px;
+            font-size: 60px;
+            background:blue;
+            margin: 50px 50px;
+            transform: translate(40px,30px);
+            transition: transform 3s;
+        }
+
+        #box1:active{
+            transform: translate(90px,80px);
+        }
+
+        #box2{
+            width: 250px;
+            height: 150px;
+            font-size: 100px;
+            background:rgb(71, 203, 255);
+            margin: 50px 50px;
+            transform: scale();
+            transition: transform 2s;
+        }
+
+        #box2:hover{
+          transform: scale(2);
+        }
+
+        #box3{
+            width: 250px;
+            height: 150px;
+            font-size: 100px;
+            background:rgb(255, 71, 184);
+            margin: 50px 50px;
+            transform: skew(30deg,10deg);
+        }
+
+        #box4{
+            width: 250px;
+            height: 150px;
+            font-size: 70px;
+            background:rgb(243, 255, 71);
+            margin: 50px 50px;
+            transform: matrix(1,0.3,0.4,1,0.3,0.4);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Transform 2D</h1>
+    <ul style="font-size: 25px;">
+        <li>rotate(angle)</li>
+        <li>translate(x,y)</li>
+        <li>translateX(x)</li>
+        <li>transalteY(y)</li>
+        <li>scale(x,y)</li>
+        <li>scaleX(x)</li>
+        <li>scaleY(y)</li>
+        <li>skew(X-angle,Y-angle)</li>
+        <li>skewX(angle)</li>
+        <li>skewY(angle)</li>
+        <li>matrix(n,n,n,n,n,n,n,n)</li>
+    </ul>
+
+    <h2>2D Transform</h2>
+    
+    <div id="box">rotate</div>
+    <div id="box1">translate</div>
+    <div id="box2">scale</div>
+    <div id="box3">skew</div>
+    <div id="box4">matrix</div>
+</body>
+</html>

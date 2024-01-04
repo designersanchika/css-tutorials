@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Style</title>
+
+    <style>
+        .transformstyle {
+            width: 400px;
+            height: 250px;
+            background: grey;
+            margin: 0px 0px 70px 100px;
+            perspective: 800px;
+            transform: rotateY(30deg);
+            transform-style: flat;
+        }
+        #box{
+            width: 400px;
+            height: 250px;
+            background: pink;
+            padding-top: 20px;
+            transform: rotateX(60deg);
+            transform-origin: top;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Transfrom Style</h1>
+    <ul style="font-size: 25px;">
+        <li>flat</li>
+        <li>preserve 3d</li>
+    </ul>
+
+    <div class="transformstyle"> 
+       <div id="box">trnsfrm style</div>
+    </div>
+
+   
+
+   
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 3D</title>
+    <style>
+        .base{
+            width: 250px;
+            height: 150px;
+            font-size: 50px;
+            background:grey;
+            margin: 50px 0px 0px 50px;
+            text-align: center;
+        }
+        #box {
+            width: 250px;
+            height: 150px;
+            background: tomato;
+            transform:rotateY(50deg);
+        }
+
+        .base1{
+            width: 250px;
+            height: 150px;
+            font-size: 50px;
+            background:grey;
+            margin: 50px 0px 0px 50px;
+            text-align: center;
+        }
+        #box1 {
+            width: 250px;
+            height: 150px;
+            background: blue;
+            transform:perspective(900px) rotateY(60deg) translate3d(80px,50px,60px);
+        }
+
+        .base2{
+            width: 250px;
+            height: 150px;
+            font-size: 50px;
+            background:grey;
+            margin: 50px 0px 0px 50px;
+            text-align: center;
+        }
+        #box2 {
+            width: 250px;
+            height: 150px;
+            background: rgb(255, 38, 0);
+            transform:perspective(900px) rotateY(60deg) scale3d(1,2,1);
+        }
+         
+
+    </style>
+</head>
+<body>
+    <h1>Transform 3D</h1>
+    <ul style="font-size: 25px;">
+        <li>rotate(angle)</li>
+        <li>rotateX(angle)</li>
+        <li>rotateY(angle)</li>
+        <li>rotateZ(angle)</li>
+        <li>rotate3d(x,y,z)</li>
+        <li>translate(x,y)</li>
+        <li>translateX(x)</li>
+        <li>transalteY(y)</li>
+        <li>translateZ(z)</li>
+        <li>translate3d(x,y,z)</li>
+        <li>scale(x,y)</li>
+        <li>scaleX(x)</li>
+        <li>scaleY(y)</li>
+        <li>scaleZ(z)</li>
+        <li>scale3d(x,y,z)</li>
+        <li>matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</li>
+        <li>perspective(n)</li>
+    </ul>
+
+    <h2>3D Transform</h2>
+    <div class="base">
+        <div id="box">rotate</div>    
+    </div>
+    <div class="base1">
+        <div id="box1">translate</div>     
+    </div>
+    <div class="base2">
+        <div id="box2">scale</div>    
+    </div>
+</body>
+</html>
